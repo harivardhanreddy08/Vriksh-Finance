@@ -1,0 +1,34 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.jumbotron {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.jumbotron .display-4 {
+    font-weight: 700;
+}
+
+.jumbotron .lead {
+    font-weight: 300;
+}
+
+.card-title {
+    color: #007bff;
+    font-weight: 600;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    margin-top: 2rem;
+}

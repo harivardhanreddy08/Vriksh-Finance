@@ -1,0 +1,636 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vriksh Finance</title>
+        <!-- Latest compiled and minified CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+        <!-- Popper JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+        <style>
+            .carousel-inner img {
+                width: 100%;
+                height: 500px;
+            }
+
+            .navbar ul li:hover a {
+                color: rgb(5, 184, 255);
+                border-bottom: 1px solid rgb(5, 141, 244);
+
+            }
+            .titles::after {
+                content: " ";
+                width: 100px;
+                height: 2px;
+                background-color: rgb(5, 159, 254);
+                display: block;
+                margin: 0 auto;
+            }
+            .offer .fa-solid {
+                color: rgb(5, 159, 254);
+            }
+            .app .fa-solid {
+                color: rgb(5, 159, 254);
+            }
+            .app .card-header {
+                padding: 2px;
+            }
+            .custom-image {
+                width: 800px;
+                /* Adjust the image width as needed */
+                height: 260px;
+                /* Adjust the image height as needed */
+                object-fit: cover;
+                /* To ensure the image fits within the dimensions without distortion */
+            }
+            footer .card-subtitle {
+                color: rgb(5, 159, 254);
+            }
+
+            .footer-card {
+                margin-bottom: 10px;
+            }
+            .footer-card img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+            footer .fa-solid {
+                color: rgb(5, 159, 254);
+            }
+            footer .addr h6 {
+                color: rgb(5, 159, 254);
+            }
+
+            .pad .pb-4,
+            .py-4 {
+                padding-bottom: 0 !important;
+            }
+
+            .pad .pt-4,
+            .py-4 {
+                padding-top: 0.6rem !important;
+            }
+            .my-4,
+            .pad .mb-4 {
+                margin-bottom: 0 !important;
+            }
+            body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* header {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+}
+
+header h1 {
+    margin: 0;
+    display: inline;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+} */
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+        </style>
+    </head >
+    <body >
+
+        <!--Header section Starts-->
+        <header>
+            <ul class="nav px-4" style="background-color: rgb(5, 159, 254);">
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="#">
+                        <h4>
+                            <i class="fa-brands fa-facebook"></i>
+                        </h4>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">
+                        <h4>
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </h4>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">
+                        <h4>
+                            <i class="fa-solid fa-envelope"></i>
+                        </h4>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">
+                        <h4>
+                            <i class="fa-brands fa-twitter"></i>
+                        </h4>
+                    </i>
+                </a>
+            </li>
+            <li class="nav-item ml-auto ">
+                <a class="nav-link text-white" href="#">
+                    <i class="fa-solid fa-phone"></i>1800-654310</a>
+            </li>
+        </ul>
+    </header>
+    <!--Header section ends-->
+    <!--Navbar section Starts-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+        <a class="navbar-brand" href="#">Vriksh Finance</a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Services.html">Services</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Navbar section ends-->
+    <!--Banner section Starts-->
+    <section class="banner">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="pic1.jpg" alt="pic1" width="1100" height="500" style="filter: brightness(0.5);">
+                    <div class="carousel-caption">
+                        <h3>Make Your Dream Come
+                            <br>True</h3>
+                        <p> Discover how to turn your wildest dreams into reality. Visualize success, 
+                        set specific goals, and take consistent action. Believe in yourself—you’ve got this! 🌟 </p>
+                        <button type="button" class="btn text-light ">Read More >>></button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="pic2.jpg" alt="pic2" width="540" height="360" style="filter: brightness(0.5);">
+                    <div class="carousel-caption">
+                        <h3>We Will Help You</h3>
+                        <p>Your Success Is Our Priority</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="pic3.jpg" alt="New York" width="1100" height="500" style="filter: brightness(0.5);">
+                    <div class="carousel-caption">
+                        <h3>We Will Guide You</h3>
+                        <p>Remember, you’re not alone—we’re here to guide you every step of the way! 😊</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </section>
+
+    <!--Banner section ends-->
+    <!--offer section Starts-->
+    <main>
+        <h2>Loan Products We Offer</h2>
+        <p>Speed Up the Loan Process</p>
+        <div class="cards-container container-fluid">
+            <div class="card">
+                <h4>
+                    <i class="fa-solid fa-house text-primary"></i>
+                </h4>
+                <h3>1. Buying a Home</h3>
+                <p>Welcome to Your Dream Home! At Vriksh Financial Services, we understand that buying a home is a significant decision—one that involves both emotions and practical considerations. Whether you're a first-time homebuyer or looking to upgrade, we're here to guide you through the exciting journey of homeownership.</p>
+            </div>
+            <div class="card">
+                <h4>
+                    <i class="fa-solid fa-building text-primary"></i>
+                </h4>
+                <h3>2. Refinancing</h3>
+                <p>Refinancing Your Home: Unlocking New Opportunities</p>
+                <ul>
+                    <li>What Is Refinancing?</li>
+                    <li>Lower Interest Rates, Cash-Out Refinance, Change in Loan Terms</li>
+                </ul>
+                <p>We're here to guide you through the refinancing process. Whether you're looking to save money, we'll help you make informed decisions. Contact us today to discuss your refinancing goals and explore the possibilities! Let's find the right solution for you!</p>
+            </div>
+            <div class="card">
+                <h4>
+                    <i class="fa-solid fa-credit-card text-primary"></i>
+                </h4>
+                <h3>3. Credit Service</h3>
+                <p>A Credit Card Direct Selling Agent (DSA) acts as an intermediary between banks or financial institutions and potential credit card customers. Your role involves promoting credit cards, identifying eligible individuals, explaining card features, assisting in the application process, and ensuring customer satisfaction.</p>
+            </div>
+        </div>
+    </main>
+    
+<!--offer section ends-->
+<!--app section Starts-->
+<section class="app">
+    <div class="titles">
+        <div class="titles text-center">
+            <h1>Fast & Easy Application Process</h1>
+            <p>Speed Up the Loan Process</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row m-5">
+            <div class="col-md-6 col-sm-12 col-12 ">
+                <div id="xyz">
+                    <div class="card p-0" style="margin-bottom: 10px;">
+                        <div
+                            class="card-header bg-secondary"
+                            data-target="#msg1"
+                            data-toggle="collapse">
+                            <h5>&nbsp;&nbsp;<i class="fa-solid fa-check">&nbsp;</i>Choose Loan Amount</h5>
+                        </div>
+                        <div class="card-body collapse" id="msg1" data-parent="#xyz">
+                            <p class="card-text" style="word-break: break-all;">
+                                 <b>Tailoring Your Borrowing Experience</b><br>
+                                 <b>Finding the Right Fit</b><br>
+                                 At Vriksh Financial Services, we believe that every borrower is unique, and their financial needs vary.
+                                  That’s why we offer a personalized approach to choosing your loan amount. Whether you’re dreaming of a new home, planning a business expansion,
+                                   or need funds for a personal project, we’ve got you covered.<br><br>
+                                   
+                                   <b>How It Works:</b><br>
+                                   1.Assess Your Requirements:<br>
+                                   Take a moment to evaluate your financial goals.<br>
+                                   Consider factors such as the purpose of the loan, repayment capacity, and future plans.<br>
+                                   2.Loan Eligibility:<br>
+                                   Our experienced team will guide you through the eligibility criteria.<br>
+                                   Understand the maximum loan amount you qualify for based on your income, credit score, and other relevant factors.<br>
+                                   3.Customize Your Loan:<br>
+                                   Choose an amount that aligns with your needs.<br>
+                                   Remember that borrowing responsibly ensures comfortable repayment.<br><br>
+                                   
+                                   <b>Loan Amount Options:</b><br>
+                                   1.Minimum Amount:<br>
+                                   Some loans have a minimum borrowing limit. We’ll help you explore these options.<br>
+                                   2.Maximum Amount:<br>
+                                   If you have a specific requirement, we’ll assist you in maximizing your loan amount (within eligible limits).<br>
+                                   3.Balancing Act:<br>
+                                   Striking the right balance is essential. Borrow what you need without overburdening yourself.<br><br>
+
+                                   <b>Why Choose Vriksh Financial Solutions?</b><br>
+                                   Personalized Guidance:<br>
+                                   Our DSA loan agents will actively listen to your needs and recommend suitable loan amounts.<br>
+                                   We consider your financial well-being as our top priority.<br>
+                                   Transparent Process:<br>
+                                   No hidden surprises! We’ll explain all terms, interest rates, and repayment schedules clearly.<br>
+                                   Flexible Solutions:<br>
+                                   Whether it’s a small personal loan or a substantial business loan, we’ve got flexible options.<br>
+                                   <b>Ready to Choose?</b><br>
+                                   Contact us today to discuss your loan requirements. Let’s find the perfect loan amount that empowers your financial journey! 💡<br>
+                                   Remember, the right loan amount can make all the difference. Let’s make sure you’re on the path to financial success!<br>
+
+                        </div>
+                    </div>
+
+                    <div class="card p-0" style="margin-bottom: 0px;">
+                        <div
+                            class="card-header bg-secondary"
+                            data-target="#msg2"
+                            data-toggle="collapse">
+                            <h5>&nbsp;&nbsp;<i class="fa-solid fa-check">&nbsp;</i>Get Your Loan Approved</h5>
+                        </div>
+                        <div class="card-body collapse" id="msg2" data-parent="#xyz">
+                            <p class="card-text" style="word-break: break-all;">
+                                <b>Get Your Loan Approved:</b><br>
+                                <b>Navigating the Approval Process</b><br><br>
+                                <b>Your Path to Financial Success</b><br>
+                                At Vriksh Financial Solutions, we understand that loan approval is a significant milestone in your financial journey. 
+                                Whether you’re seeking a home loan, a personal loan, or any other type of credit, we’re here to guide you through the process.
+                                Let’s demystify the steps and ensure a smooth approval experience.<br><br>
+                                <b>How It Works:</b><br>
+                                1.Eligibility Check:<br>
+                                Our team will assess your eligibility based on factors such as income, credit score, and existing financial commitments.<br>
+                                We’ll help you understand the loan amount you qualify for and the interest rates applicable.<br>
+                                2.Document Collection:<br>
+                                Gather the necessary documents, including:<br>
+                                <b>Identity Proof:</b> Aadhar card, passport, or driver’s license.<br>
+                                <b>Address Proof:</b> Utility bills, rental agreement, or voter ID.<br>
+                                <b>Income Proof:</b> Salary slips, bank statements, or income tax returns.<br>
+                                <b>Property Documents (for home loans):</b> Sale deed, NOC, and property valuation report.<br>
+                                3.Application Submission:<br>
+                                We’ll assist you in filling out the loan application form accurately.<br>
+                                Submit the application along with the required documents to the lender.<br>
+                                4.Credit Appraisal:<br>
+                                The lender evaluates your creditworthiness by analyzing your credit history, income stability, and repayment capacity.<br>
+                                Be prepared for a thorough review.<br>
+                                5.Property Valuation (for home loans):<br>
+                                If it’s a home loan, the lender assesses the property’s value through an independent valuation process.<br>
+                                6.Loan Approval:<br>
+                                Once all checks are complete, the lender approves your loan.<br>
+                                You’ll receive an approval letter outlining the terms and conditions.<br><br>
+                                <b>Why Choose Vriksh Financial Solutions?</b><br>
+                                ->Expert Guidance:<br>
+                                Our experienced DSA loan agents will walk you through each step, ensuring you’re well-prepared.<br>
+                                We answer your questions and address any concerns promptly.<br><br>
+                                ->Efficiency:<br>
+                                We streamline the approval process, minimizing delays.<br>
+                                Our goal is to get your loan approved swiftly.<br><br>
+                                ->Transparency:<br>
+                                No hidden surprises! We explain all terms clearly.<br>
+                                You’ll know exactly what to expect.<br><br>
+                                <b>Ready to Get Approved?</b><br>
+                                Contact us today to kick-start your loan approval journey. Let’s make your financial dreams a reality! 🌟<br><br>
+                                Remember, loan approval is within reach. Let’s work together to secure the funds you need!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card  p-0 my-2" style="margin-bottom: 10px;">
+                        <div
+                            class="card-header bg-secondary"
+                            data-target="#msg3"
+                            data-toggle="collapse">
+                            <h5>&nbsp;&nbsp;<i class="fa-solid fa-check">&nbsp;</i>For New Home Purchase</h5>
+                        </div>
+                        <div class="card-body collapse" id="msg3" data-parent="#xyz">
+                            <p class="card-text" style="word-break: break-all;">
+                                <b>For New Home Purchase:</b><br>
+                                <b>Your Journey Begins Here</b><br><br>
+                                <b>Welcome to Your Dream Home!</b><br>
+                                At Your DSA Name, we understand that buying a new home is a significant decision—one filled with excitement,
+                                anticipation, and sometimes a touch of nervousness. Whether you’re a first-time homebuyer or an experienced one,
+                                we’re here to guide you through the exhilarating journey of homeownership. <br><br>
+                                <b>Why Choose Us?</b><br>
+                                1.Personalized Guidance: <br>
+                                Our experienced team of real estate professionals will listen to your needs, preferences, and budget. <br>
+                                We’ll help you find properties that match your lifestyle, whether it’s a cozy apartment, a suburban house, or a luxurious villa. <br>
+                                2.Market Insights: <br>
+                                Stay informed! We provide up-to-date market trends, property values, and neighborhood insights. <br>
+                                Our goal is to empower you with knowledge so you can make informed decisions. <br>
+                                3.Smooth Transactions: <br>
+                                From property search to closing the deal, we handle the paperwork, negotiations, and legal aspects. <br>
+                                Our priority is to make the process seamless and stress-free for you. <br><br>
+                                <b>What to Expect: </b><br>
+                                1.Property Search: <br>
+                                Explore our curated listings. Filter by location, size, amenities, and price range. <br>
+                                Visit open houses or schedule private viewings. <br>
+                                2.Financial Planning: <br>
+                                Understand your budget. We’ll connect you with mortgage experts if needed. <br>
+                                Calculate monthly payments, down payments, and other costs. <br>
+                                3.Negotiation and Offer: <br>
+                                We’ll guide you through making an offer. Negotiate terms with confidence. <br>
+                                Our goal: Get you the best deal! <br>
+                                4.Inspections and Due Diligence: <br>
+                                Inspect the property thoroughly. We’ll recommend trusted inspectors. <br>
+                                Review legal documents and disclosures. <br>
+                                5.Closing the Deal: <br>
+                                Congratulations! Sign the paperwork, transfer ownership, and get the keys. <br>
+                                Celebrate your new home! <br> <br>
+                                <b>Let’s Get Started!</b><br>
+                                Ready to find your dream home? Contact us today! Our team is passionate about helping you achieve your homeownership goals. 🏡 <br><br>
+                                Remember, buying a home is not just about square footage; it’s about creating memories and building a future. Let’s make this journey memorable together! <br>b
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6  col-sm-12 col-12">
+                <img src="faster.avif" alt="" class="img-fluid custom-image" width="200" height="600">
+            </div>
+        </div>
+    </div>
+</section>
+<!--app section ends-->
+<!--news section Starts-->
+
+<div class="container">
+        <h2 class="text-center my-lg-4">Latest News From Loan Company</h2>
+        <div class="row ">
+            <div class="col-md-4 mb-4 d-flex">
+                <div class="card justify-content-around">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Moving Tips</h5>
+                        <p class="card-text">Stay updated with the latest advice on helping clients move smoothly into their new homes. Discover efficient packing techniques, important document organization, and best practices for coordinating moving services. As a DSA, these tips will enhance your client’s moving experience.</p>
+                        <p class="card-text"><small class="text-muted">Last Update on May 17</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 d-flex">
+                <div class="card">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">A Big Time Saver</h5>
+                        <p class="card-text">Learn how DSAs can significantly reduce the time clients spend on loan applications. Get the latest insights on streamlining documentation, providing clear guidance, and leveraging direct lender connections. Stay informed to save your clients time and improve their experience.</p>
+                        <p class="card-text"><small class="text-muted">Last Update on May 17</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 d-flex">
+                <div class="card">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Is Now the Time to Fix?</h5>
+                        <p class="card-text">Keep abreast of the best times to recommend fixed-rate mortgages. Explore the latest market trends, understand the benefits of rate stability, and provide clients with up-to-date financial advice. Help your clients make well-informed decisions with your expert insights.</p>
+                        <p class="card-text"><small class="text-muted">Last Update on May 17</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--news section ends-->
+
+<!--footer section Starts-->
+
+<footer class=" p-5 text-white " style="background-color: black;">
+
+<div class="container">
+<div class="row">
+<div class="col-md-3 col-sm-6 col-12">
+    <div class="main">
+        <h3>About</h3>
+        <p>At our core, we are Direct Selling Agents (DSAs)—knowledgeable representatives who connect potential customers with financial institutions such as banks and non-banking financial companies (NBFCs). Our mission is to promote and sell various financial products directly to consumers. These products can include:
+
+            Home loans
+            Personal loans
+            Credit cards
+            Other financial services
+            </p>
+    </div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+    <div class="main">
+        <h3>Contact Us</h3>
+        <address>
+            <div class="addr">
+                <h6>Address:</h6>
+                <p>Vriksh pvt ltd, Panjagutta, Hyderabad, India
+                </p>
+            </div>
+            <div class="addr">
+                <h6>Phone:040-345723</h6>
+            </div>
+            <div class="addr">
+                <h6>Email:</h6>
+                <p>Info@exmaple.com</p>
+            </div>
+            <div class="addr">
+                <h6>Fax:1800-654310</h6>
+            </div>
+        </address>
+    </div>
+</div>
+
+
+<div class="col-md-3 col-sm-6 col-12">
+    <div class="main">
+        <h3>Subscribe</h3>
+        <p style="word-break: break-all;">Some quick example text to build on the card
+            title and make up the bulk of the card's content.</p>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Your Email">
+            <div class="input-group-append">
+                <span class="input-group-text">
+                    <i class="fa-solid fa-envelope"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!--footer ends here-->
+
+<ul class="nav px-4" style="background-color: rgb(14, 11, 11);">
+<li class="nav-item text-white mt-3">
+<p >© 2024 Home Loan.All Rights Reserved | Designed by Vriksh Ltd.</p>
+</li>
+<a
+href="/"
+class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+<svg class="bi me-2" width="40" height="32">
+<use xlink:href="#bootstrap"></use>
+</svg>
+</a>
+<ul class="nav col-md-4 justify-content-end">
+<li class="nav-item mt-2">
+<a href="#" class="nav-link px-2 text-white ">
+<h4>
+<i class="fa-brands fa-facebook"></i>
+</h4>
+</a>
+</li>
+<li class="nav-item mt-2">
+<a href="#" class="nav-link px-2 text-white">
+<h4>
+<i class="fa-brands fa-square-instagram"></i>
+</h4>
+</a>
+</li>
+<li class="nav-item mt-2">
+<a href="#" class="nav-link px-2 text-white">
+<h4>
+<i class="fa-brands fa-square-twitter"></i>
+</h4>
+</a>
+</li>
+<li class="nav-item mt-2">
+<a href="#" class="nav-link px-2 text-white">
+<h4>
+<i class="fa-brands fa-square-whatsapp"></i>
+</h4>
+</a>
+</li>
+</ul>
+
+</body>
+</html>
